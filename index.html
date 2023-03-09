@@ -1,217 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <title>Bingo</title>
-</head>
-<style>
-
-  body{
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+ <!--<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">-->
+  <title>Lotofácil</title>
+  <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   nav{
+    padding: 10px;
     display: flex;
-    justify-content: center; /* Alinhamento horizontal */
-    align-items: center;
-    background-color: rgb(61, 180, 6);
+    justify-content: center;
+    background: black;
+   
+   }
 
-  }
-#container{
-  margin-top: 19px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 440px;
-  height: 430px;
-  
-}
-#setor1{
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 440px;
-  height: 430px;
-  color: rgb(5, 5, 5);
-  background: rgb(249, 250, 250);
-
-}
-#numeros-sorteados{
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 440px;
-  height: 430px;
-  background: rgb(249, 250, 250)
-}
-
-
-#numberbox, li{
- display: flex;
- align-items: center;
- justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgb(255, 17, 0);
-}
-
-#setor2{
-  margin-top: 23px;
-  margin-left: 25px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 440px;
-  height: 430px;
-  
-}
-
-
-label{
-  color: white;
-  float: right;
-  
-}
-
-#sortear{
-  width: 60px;
-  height: 50px;
- }
-
-</style>
-<body>
-  <div id="container">
-  <label>BINGO</label>
-      <table>
-        <tr id="setor1">
-        <td id="numberbox">01</td>
-        <td id="numberbox">02</td>
-        <td id="numberbox">03</td>
-        <td id="numberbox">04</td>
-        <td id="numberbox">05</td>
-        <td id="numberbox">06</td>
-        <td id="numberbox">07</td>
-        <td id="numberbox">08</td>
-        <td id="numberbox">09</td>
-        <td id="numberbox">10</td>
-        <td id="numberbox">11</td>
-        <td id="numberbox">12</td>
-        <td id="numberbox">13</td>
-        <td id="numberbox">14</td>
-        <td id="numberbox">15</td>
-        <td id="numberbox">16</td>
-        <td id="numberbox">17</td>
-        <td id="numberbox">18</td>
-        <td id="numberbox">19</td>
-        <td id="numberbox">20</td>
-        <td id="numberbox">21</td>
-        <td id="numberbox">22</td>
-        <td id="numberbox">23</td>
-        <td id="numberbox">24</td>
-        <td id="numberbox">25</td>
-        <td id="numberbox">26</td>
-        <td id="numberbox">27</td>
-        <td id="numberbox">28</td>
-        <td id="numberbox">29</td>
-        <td id="numberbox">30</td>
-        <td id="numberbox">31</td>
-        <td id="numberbox">32</td>
-        <td id="numberbox">33</td>
-        <td id="numberbox">34</td>
-        <td id="numberbox">35</td>
-        <td id="numberbox">36</td>
-        <td id="numberbox">37</td>
-        <td id="numberbox">38</td>
-        <td id="numberbox">39</td>
-        <td id="numberbox">40</td>
-        <td id="numberbox">41</td>
-        <td id="numberbox">42</td>
-        <td id="numberbox">43</td>
-        <td id="numberbox">44</td>
-        <td id="numberbox">45</td>
-        <td id="numberbox">46</td>
-        <td id="numberbox">47</td>
-        <td id="numberbox">48</td>
-        <td id="numberbox">49</td>
-        <td id="numberbox">50</td>
-        <td id="numberbox">51</td>
-        <td id="numberbox">52</td>
-        <td id="numberbox">53</td>
-        <td id="numberbox">54</td>
-        <td id="numberbox">55</td>
-        <td id="numberbox">56</td>
-        <td id="numberbox">57</td>
-        <td id="numberbox">58</td>
-        <td id="numberbox">59</td>
-        <td id="numberbox">60</td>
-        <td id="numberbox">61</td>
-        <td id="numberbox">62</td>
-        <td id="numberbox">63</td>
-        <td id="numberbox">64</td>
-        <td id="numberbox">65</td>
-        <td id="numberbox">66</td>
-        <td id="numberbox">67</td>
-        <td id="numberbox">68</td>
-        <td id="numberbox">69</td>
-        <td id="numberbox">70</td>
-        <td id="numberbox">71</td>
-        <td id="numberbox">72</td>
-        <td id="numberbox">73</td>
-        <td id="numberbox">74</td>
-        <td id="numberbox">75</td>
-        <td id="numberbox">76</td>
-        <td id="numberbox">77</td>
-        <td id="numberbox">78</td>
-        <td id="numberbox">79</td>
-        <td id="numberbox">80</td>
-        <td id="numberbox">81</td>
-        <td id="numberbox">82</td>
-        <td id="numberbox">83</td>
-        <td id="numberbox">84</td>
-        <td id="numberbox">85</td>
-        <td id="numberbox">86</td>
-        <td id="numberbox">87</td>
-        <td id="numberbox">88</td>
-        <td id="numberbox">89</td>
-        <td id="numberbox">90</td>
-      </tr>
-      </table>
-    </div>
-    <div id="setor2">
-      <label>NUMEROS SORTEADOS</label>
-      <div id="numeros-sorteados"> 
-        
-      </div>
-    </div>
-     
-      <button id="sortear">Sortear</button>
-    <script>
-      let setor2 = [];
-
-function sortearNumero() {
-  let numeroSorteado;
-  do {
-    numeroSorteado = Math.floor(Math.random() * 90) + 1;
-  } while (setor2.includes(numeroSorteado));
-
-  setor2.push(numeroSorteado);
-  return numeroSorteado;
-}
-      let listasetor2 = document.getElementById('numeros-sorteados');
-      
-      document.getElementById('sortear').addEventListener('click', function() {
-        let numeroSorteado = sortearNumero();
-        setor2.push(numeroSorteado);
-        listasetor2.innerHTML += '<li>' + numeroSorteado + '</li>';
-        // Seleciona o número sorteado na tabela
-        let celula = document.querySelector('#setor1 td:nth-child(' + numeroSorteado + ')');
-        celula.style.backgroundColor = 'yellow';
-        console.log(numeroSorteado)
-      });
-      
-
-    </script>
+   ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
     
-    </body>
-</body>
-</html>
+   }
+
+   a{
+    text-decoration: none;
+    color: aliceblue;
+    
+   }
+
+   li{
+    list-style-type: none;
+   }
+
+   li a {
+    padding: 20px;
+   }
+    #container{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 400px;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      border: 1px solid black;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      cursor: pointer;
+    }
+    td.selected {
+      background-color: #ffcc00;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Repositorios</a></li>
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Discord</a></li>
+      <li><a href="#">Linktree</a></li>
+    </ul>
+   
+  </nav>
+  <div id="container">
+    <table>
+      <tr>
+        <td>01</td>
+        <td>02</td>
+        <td>03</td>
+        <td>04</td>
+        <td>05</td>
+      </tr>
+      <tr>
+        <td>06</td>
+        <td>07</td>
+        <td>08</td>
+        <td>09</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+      </tr>
+    </table>
+    <button id="sortear">Sortear</button>    
+  </div>
+  
+  <script>
+    const numerosDisponiveis = Array.from(Array(25), (_, i) => i + 1);
+    const numerosSelecionados = [];
+    
+    const cells = document.querySelectorAll('td');
+    cells.forEach(cell => {
+      cell.addEventListener('click', function() {
+        if (cell.classList.contains('selected')) {
+          cell.classList.remove('selected');
+          const index = numerosSelecionados.indexOf(parseInt(cell.textContent));
+          if (index > -1) {
+            numerosSelecionados.splice(index, 1);
+          }
+        } else {
+          cell.classList.add('selected');
+          numerosSelecionados.push(parseInt(cell.textContent));
+        }
+      });
+    });
+    const sortearButton = document.querySelector('#sortear');
+    sortearButton.addEventListener('click', function() {
+      const numerosNaoSelecionados = numerosDisponiveis.filter(numero => !numerosSelecionados.includes(numero));
+      const numerosSorteados = [];
+      
+      for (let i = 0; i < 15; i++) {
+        const index = Math.floor(Math.random() * numerosNaoSelecionados.length);
+        const numeroSorteado = numerosNaoSelecionados.splice(index, 1)[0];
+        numerosSorteados.push(numeroSorteado);
+      }
+      alert('Números sorteados: ' + numerosSorteados.join(', '));
+    });
+  </script></body>
+  </html>
